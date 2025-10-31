@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Python Snake</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>
+        <span class="snake-green">Python</span> 
+        <span class="snake-blue">Snake</span>
+    </h1>
+
+    <div id="menu">
+        <p>Escolha a dificuldade:</p>
+        <button class="easy" onclick="startGame(200)">Fácil</button>
+        <button class="medium" onclick="startGame(120)">Médio</button>
+        <button class="hard" onclick="startGame(70)">Difícil</button>
+    </div>
+
+    <p id="score" style="display:none;">Lines of Code: 0</p>
+    <canvas id="gameCanvas" width="400" height="400" style="display:none;"></canvas>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

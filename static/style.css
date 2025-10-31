@@ -1,0 +1,81 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-color: #121217;
+    color: #fff;
+}
+
+canvas {
+    background-color: #1a1a1a;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+    background-image:
+        linear-gradient(#2c2c3c 1px, transparent 1px),
+        linear-gradient(90deg, #2c2c3c 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 20px 0 10px 0;
+    text-shadow: 1px 1px 0 #0f3d0f, 1px 1px 0 #1a3d3d;
+}
+
+.snake-green {
+    color: #33cc33;
+}
+
+.snake-blue {
+    color: #3399cc;
+}
+
+#score {
+    font-size: 16px;
+    color: #33cc33;
+    margin: 20px 0;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+#menu button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    color: white;
+    transition: all 0.3s;
+}
+
+#menu button:hover {
+    box-shadow: 0 0 10px #33cc33, 0 0 20px #3399cc;
+    border-color: #33cc33;
+}
+
+#menu button.easy {
+    background-color: #0070c0;
+}
+
+#menu button.medium {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+#menu button.hard {
+    background-color: #ff3300;
+}
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {opacity:1;}
+    20%, 22%, 24%, 55% {opacity:0;}
+}
